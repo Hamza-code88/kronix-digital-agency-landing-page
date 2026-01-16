@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+
+
+@theme {
+
+
+  
+  /* Update Font Here */
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  /* ... background images ... */
+  /* COLORS UPDATE: Background ab naya dark color (#111204) hai */
+  --color-background: #111204;           
+  --color-background-secondary: #1A1A1A; 
+  
+  /* Primary Green wahi purana wala (#B9FD50) rakha hai */
+  --color-primary: #B9FD50;              
+  --color-primary-hover: #a3e635;        
+  
+  --color-text: #FFFFFF;
+  --color-text-muted: #A3A3A3;
+
+  /* Fonts */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* GLOW UPDATE: */
+  /* 1. Start Color: Green (185, 253, 80) wahi hai jo chamkega. */
+  /* 2. End Color: Ab ye naye background (17, 18, 4) par transparency 0% par khatam hoga. */
+  --background-image-hero-glow: radial-gradient(circle at 50% 30%, rgba(185, 253, 80, 0.15) 0%, rgba(17, 18, 4, 0) 70%);
+}
+
+@layer base {
+  html {
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+}
