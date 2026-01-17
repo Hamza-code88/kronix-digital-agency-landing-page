@@ -6,20 +6,23 @@ import { ProcessConnector } from './ProcessConnector';
 interface ProcessStepCardProps {
   step: ProcessStep;
   showArrow: boolean;
-
 }
 
 export const ProcessStepCard: React.FC<ProcessStepCardProps> = ({ step, showArrow }) => {
   return (
-    <div className="flex flex-col md:w-64">
+    
+    <div className="flex flex-col md:w-64 items-center text-center md:items-start md:text-left">
+      
       {/* Icon Area */}
+    
       <div className="mb-6">
-        <ProcessIcon className=' relative z-10' icon={step.icon} />
+        <ProcessIcon className='relative z-10' icon={step.icon} />
+        
         {showArrow && (
          
-          <div className="hidden md:flex flex-1 -my-2 mx-4 z-0 ">
-            <ProcessConnector />
-          </div>
+           <div className="hidden md:flex flex-1 -my-2 mx-4 z-0">
+             <ProcessConnector />
+           </div>
         )}
       </div>
       
