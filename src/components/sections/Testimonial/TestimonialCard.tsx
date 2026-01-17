@@ -33,9 +33,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({ data }) => {
             {data.headline}
           </h3>
 
-            <p className="mb-4 text-[12px]  leading-snug text-gray-900 md:text-[16px] lg:text-lg">
-            {data.description}
-          </p>
+          
 
           {/* Body Text - Readable Gray */}
           <p className="mb-8 text-sm leading-relaxed text-gray-600 md:text-base">

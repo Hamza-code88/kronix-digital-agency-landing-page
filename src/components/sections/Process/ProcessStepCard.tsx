@@ -10,19 +10,19 @@ interface ProcessStepCardProps {
 
 export const ProcessStepCard: React.FC<ProcessStepCardProps> = ({ step, showArrow }) => {
   return (
-    
-    <div className="flex flex-col md:w-64 items-center text-center md:items-start md:text-left">
+    // CHANGE: Added 'items-center text-center' for Mobile.
+    // CHANGE: Added 'md:items-start md:text-left' to RESET it for Desktop (Original).
+    <div className="flex flex-col items-center text-center md:items-start md:text-left md:w-64">
       
       {/* Icon Area */}
-    
+      {/* Desktop structure remains 100% SAME to keep arrow alignment */}
       <div className="mb-6">
         <ProcessIcon className='relative z-10' icon={step.icon} />
         
         {showArrow && (
-         
-           <div className="hidden md:flex flex-1 -my-2 mx-4 z-0">
-             <ProcessConnector />
-           </div>
+          <div className="hidden md:flex flex-1 -my-2 mx-4 z-0 ">
+            <ProcessConnector />
+          </div>
         )}
       </div>
       

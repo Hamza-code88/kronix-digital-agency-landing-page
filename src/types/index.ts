@@ -43,7 +43,8 @@ export interface Benefit {
   number: string;
   title: string;
   description: string;
-  icon: LucideIcon;
+  
+  icon: LucideIcon | React.ElementType; 
 }
 
 // --- Testimonials Section ---
