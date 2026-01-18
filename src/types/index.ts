@@ -18,8 +18,7 @@ export interface NavItem {
 export interface Brand {
   id: string;
   name: string;
-  // 'React.ElementType' add kiya taaki Custom SVGs bhi support hon
-  Icon: LucideIcon | React.ElementType; 
+  Icon: string | LucideIcon | React.ElementType;
 }
 
 // --- Process Section ---
@@ -43,7 +42,6 @@ export interface Benefit {
   number: string;
   title: string;
   description: string;
-  
   icon: LucideIcon | React.ElementType; 
 }
 

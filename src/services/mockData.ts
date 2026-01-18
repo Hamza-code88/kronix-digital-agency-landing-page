@@ -6,11 +6,11 @@ import {
 } from 'lucide-react';
 
 // --- Icons Imports ---
-import { LayersIcon } from '../components/svg/LawyerIcon';
-import circle from '../components/svg/circle';
-import quetion from '../components/svg/quetion';
-import hour from '../components/svg/hour';
-import command from '../components/svg/command';
+import layer from '../assets/benefits/layers.png';
+import circle from '../assets/benefits/circle.png';
+import quetion from '../assets/benefits/question.png';
+import hour from '../assets/benefits/hours.png';
+import command from '../assets/benefits/command.png';
 import b1Icon from '../components/svg/b1'; // Renamed to lowercase standard
 
 // --- Images Imports (TOP PAR IMPORT KARNA ZAROORI HAI) ---
@@ -48,7 +48,7 @@ export const MOCK_NAV_ITEMS: NavItem[] = [
 ];
 
 export const MOCK_BRANDS: Brand[] = [
-  { id: 'b1', name: 'Layers', Icon: LayersIcon  },
+  { id: 'b1', name: 'Layers', Icon: layer  },
   { id: 'b3', name: 'Circooles', Icon: quetion },
   { id: 'b2', name: 'Quotient', Icon: circle },
   { id: 'b4', name: 'Hourglass', Icon: hour },
